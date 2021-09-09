@@ -6,6 +6,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  margin: auto;
 }
 
 hr {
@@ -76,6 +77,8 @@ hr {
   font-weight: bold;
 }
 
+/** header **/
+
 .hero {
   padding: 2rem;
 }
@@ -89,6 +92,10 @@ hr {
 .hero .hero-heading {
   padding-top: 1 rem;
   color: gray;
+}
+
+.hero .hero-heading .heading-inverted {
+  color: blueviolet;
 }
 
 /** section **/
@@ -114,6 +121,11 @@ footer {
 
 .footer .link {
   color: white;
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
 }
 
 .footer ul {
