@@ -37,6 +37,7 @@ hr {
   color: white;
   color: #fff;
   margin: 1rem auto;
+  max-width: 140px;
   padding: 0.6rem 1.2rem;
 }
 
