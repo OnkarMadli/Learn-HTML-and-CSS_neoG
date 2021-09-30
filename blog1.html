@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>blogs | adarshbalika</title>
+  </head>
+
+  <body>
+    <nav class="navigation container">
+        <div class="nav-brand">Onkar Madli</div>
+        <ul class="list-non-bullet nav-pills"
+        style="display: block;">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/blogs.html">blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+      <h1 class="hero-heading">
+        <span class="heading-inverted">Quantum Computing</span>
+      </h1>
+    </header>
+
+    <article class="showcase-blog">
+      <p>
+        Unlike classical computers that use binary characters, 
+        0 and 1, also called bits, quantum computers use something 
+        called qubits. Bits in classical computers can have only two states, 
+        either 0 or 1, whereas qubits can have more than two states, called 
+        as a superposition state. 
+      </p>
+
+      <h2>Superposition</h2>
+      <p>
+            Superposition state can be thought of as a probability 
+            distribution having more than one state. Once it is measured 
+            at any given point, it either points towards 0(up spin) or
+            1(down spin), and the measured output may vary each time. Suppose, 
+            there are n states for a certain qubit, then the sum of probabilities
+            of all those states will always be equal to 1. 
+          <br>
+          <br>
+            In quantum computing, we use Bloch sphere to geometrically 
+            represent the superposition state of the qubit. It is also called a
+            pure state space of a 1 qubit quantum register. A superposition
+            state can lie on any point on this sphere, but when the state is measured,
+            it either shows 0 or 1. Since Qubits can be in more than one state until
+            it is measured, the state cannot be represented as 0 or 1 as we do for 
+            classical bits. So, we use two orthogonal vectors to represent qubits,
+            and Bra-ket notation is used. 
+      </p>
+
+      <h3>
+        Dirac Notation
+      </h3>
+      <p>
+        Here, it shows the matrix representation of the dirac notations|0⟩
+        and |1⟩, and these are used to represent up spin and down spin respectively, 
+        spin means a linear combination of up spin and down spin, and coefficient alpha is the amplitude. 
+        <br>
+        <br>
+        In classical computers, we use gates to perform operations on bits. Similarly, we have a different set of gates to perform operations on qubits, and unlike classical gates, these are reversible. 
+        <br>
+        Example: Hadamard, Pauli , Controlled, etc.
+
+      </p>
+      <h2>Entanglement</h2>
+      <p>
+        It is a property of quantum particles where when two 
+        entities are entangled, we can say that they are no longer independent,
+        and any changes in one of the entities are reflected in the state of 
+        the other entity. This phenomenon is not normal in the classical world. 
+    </p>
+    <h2>Qiskit and IBM Quantum Systems </h2>
+    <p>
+        The workflow of Qiskit involves three steps: 
+        <ol start="1">
+            <li><bold>Build</bold> - design a quantum circuit. </li>
+            <li>Execute - run the circuits on various backends, which includes simulators as well as systems.</li>
+            <li>Analyze - calculate summary statistics and visualize the experiments. </li>
+        </ol>
+Qiskit has four elements: 
+<ol>
+    <li>Terra: It is the foundation on which the rest of the Qiskit runs. It works at the level of circuits and pulses. </li>
+    <li>Aer: It consists of simulators, emulators, and debuggers, which helps by mimicking quantum computation. It has C++ simulator backends for executing circuits compiled in Terra, and it can provide realistic noise simulations that occur on real quantum devices. </li>
+    <li>Ignis: It is used to design error correction codes. It includes better characterization of errors, improving gates, and computing in the presence of noise. </li>
+    <li>Aqua: This is used to build algorithms for quantum computers, and solve real-world problems. </li>
+</ol>
+
+In Qiskit programming, the first thing is to learn is to build QuantumCircuit. We should begin by defining qubit registers and perform the calculation on those using quantum gates. To store the output we define classical bits, then using Qiskit visualization tools we can represent the circuit and the output graphically.
+
+    </p>
+    </article>
+
+    <footer class="footer">
+        <p>© | 2021 | OnkarMadli</p>
+        <div class="footer-header">Connect me with: </div>
+        <ul class="social-links list-non-bullet">
+            <li>
+                <a class="link" href="https://github.com/OnkarMadli/" target="_blank">
+                  <img src="../images/icons8-github-32.png" alt="github" />
+                </a>
+              </li>
+              <li>
+                <a class="link" href="https://discordapp.com/users/Onkar#4701" target="_blank">
+                  <img src="../images/icons8-discord-32.png" alt="discord" />
+                </a>
+              </li>
+              <li>
+                <a class="link" href="https://www.linkedin.com/in/onkarmadli/" target="_blank">
+                  <img src="../images/icons8-linkedin-32.png" alt="twitter" />
+                </a>
+              </li>
+        </ul>
+    </footer>
+  </body>
+</html>
